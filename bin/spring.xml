@@ -2,5 +2,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-	<bean id="triangle" class="org.koushik.javabrains.Triangle"></bean>
+	<bean id="triangle" class="org.koushik.javabrains.Triangle">
+		<property name="type" value="Equilateral" />
+	</bean>
 </beans>
