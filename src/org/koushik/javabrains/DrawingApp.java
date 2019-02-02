@@ -9,12 +9,9 @@ import org.springframework.core.io.FileSystemResource;
 public class DrawingApp {
 
 	public static void main(String[] args) {
-		//without spring
-		//Triangle triangle = new Triangle();
-		
-		//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+		//you can get the bean by id, name, alias
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Triangle triangle = (Triangle) context.getBean("triangle");
+		Triangle triangle = (Triangle) context.getBean("triangle-alias");
 		triangle.draw();
 	}
 
